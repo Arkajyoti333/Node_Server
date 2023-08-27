@@ -1,0 +1,37 @@
+/* Reset some default styles and add basic styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+.center{
+    text-align: center;
+}
+#content {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center; /* Center-align the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#changeTextBtn {
+    margin-top: 1rem; /* Add some spacing above the button */
+}
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        /* Reset some default styles and add basic styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+.center{
+    text-align: center;
+}
+#content {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center; /* Center-align the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#changeTextBtn {
+    margin-top: 1rem; /* Add some spacing above the button */
+}
+
+
+
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <header>
+        <h1>Node Server</h1>
+    </header>
+    <main>
+        <section id="content">
+            <h1 class="center"> All ok origin master ~ Sarver Running Successfully:)</h1>
+            <button id="changeTextBtn">Click here</button>
+        </section>
+    </main>
+    <script src="script.js">
+        // Get references to DOM elements
+        const changeTextBtn = document.getElementById("changeTextBtn");
+        const contentParagraph = document.querySelector("#content p");
+
+        // Add click event listener to the button
+        changeTextBtn.addEventListener("click", () => {
+            contentParagraph.textContent = "Text changed using JavaScript!";
+        });
+
+    </script>
+</body>
+
+</html>
